@@ -1,0 +1,238 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.home {
+  text-align: center;
+  background: linear-gradient(to bottom, #f0f8ff, #87ceeb);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 220px;
+  height: 100%;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-image {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.details-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}
+
+.pokemon-details {
+  text-align: center;
+  padding: 20px;
+}
+
+.pokemon-details img {
+  width: 150px;
+  height: 150px;
+}
+
+.game {
+  text-align: center;
+  padding: 20px;
+}
+
+.battle-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pokemon-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.battle-button, .reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.battle-button:hover, .reset-button:hover {
+  background-color: #0056b3;
+}
+
+.winner {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.game-button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.game-button:hover {
+  background-color: #0056b3;
+}
+
+.links-container {
+  margin-bottom: 20px;
+}
+
+.memory-button {
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.memory-button:hover {
+  background-color: #e0a800;
+}
+
+.pkmn__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pkmn__picture {
+  margin-bottom: 10px;
+}
+
+.pkmn__cp {
+  font-size: 14px;
+  color: #555;
+}
+
+.pkmn__png {
+  width: 120px;
+  height: 120px;
+}
+
+.pkmn__info {
+  margin-top: 10px;
+}
+
+.pkmn__name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.size-medium {
+  font-size: 14px;
+  color: #666;
+}
+
+.pkmn__data {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.pkmn__type, .pkmn__weight, .pkmn__height {
+  text-align: center;
+}
+
+.text--small {
+  font-size: 12px;
+  color: #888;
+}
+
+.see-more-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.see-more-button:hover {
+  background-color: #218838;
+}
+
+/* Memory game card styles */
+.memory-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.memory-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.memory-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

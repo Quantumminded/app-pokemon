@@ -1,0 +1,68 @@
+.game {
+  text-align: center;
+  padding: 20px;
+}
+
+.selection-container, .battle-container, .opponent-container {
+  margin-bottom: 20px;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pokemon-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.pokemon-card.selected {
+  border: 2px solid #007bff;
+}
+
+.stat-selection {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.stat-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.stat-button.selected {
+  background-color: #218838;
+}
+
+.battle-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.battle-button:hover {
+  background-color: #0056b3;
+}
+
+.winner {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
