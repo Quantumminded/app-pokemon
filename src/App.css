@@ -236,3 +236,83 @@
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+/* Memory game styles */
+.memory-game {
+  text-align: center;
+  padding: 20px;
+}
+
+.memory-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.memory-card {
+  flex: 1 1 calc(25% - 15px); /* Adjust card size based on container width */
+  max-width: calc(25% - 15px); /* Prevent cards from exceeding their calculated size */
+  height: auto; /* Allow height to adjust dynamically */
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.memory-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.memory-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation bar styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #007bff;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .memory-card {
+    flex: 1 1 calc(50% - 15px); /* Adjust card size for smaller screens */
+    max-width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .memory-card {
+    flex: 1 1 calc(100% - 15px); /* Adjust card size for very small screens */
+    max-width: calc(100% - 15px);
+  }
+}
+

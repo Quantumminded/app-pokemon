@@ -54,14 +54,6 @@ const Home = () => {
   return (
     <div className="home">
       <h1>Pokémon Cards</h1>
-      <div className="links-container">
-        <Link to="/game">
-          <button className="game-button">Go to Game</button>
-        </Link>
-        <Link to="/memory-game">
-          <button className="memory-button">Play Memory Game</button>
-        </Link>
-      </div>
       <div className="card-container">
         {pokemonList.map((pokemon) => (
           <div

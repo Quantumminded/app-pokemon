@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import Card from "./components/Card";
-import Game from "./components/Game"; // Import Game component
-import MemoryGame from "./components/MemoryGame"; // Import MemoryGame component
+import Game from "./components/Game";
+import MemoryGame from "./components/MemoryGame";
 import './App.css';
 
 function App() {
@@ -20,12 +20,16 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Pokémon Cards</h1>
+      <nav className="navbar">
+        <Link to="/">Home</Link>
+        <Link to="/memory-game">Memory Game</Link>
+        <Link to="/game">Game</Link>
+      </nav>
       <Routes>
         <Route index element={<Home />} />
         <Route path="pokemon/:id" element={<Card />} />
         <Route path="game" element={<Game />} />
-        <Route path="memory-game" element={<MemoryGame />} /> {/* Add MemoryGame route */}
+        <Route path="memory-game" element={<MemoryGame />} />
       </Routes>
     </div>
   );
